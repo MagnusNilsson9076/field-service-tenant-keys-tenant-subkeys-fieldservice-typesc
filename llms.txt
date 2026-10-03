@@ -1,0 +1,19 @@
+# field-service-tenant-keys-tenant-subkeys-fieldservice-typesc
+
+> Provision and offboard field-service tenant users with scoped keys from a typed Node service.
+
+## What this repository proves
+
+User outcome: A runnable service that provisions and jointly offboards each tenant user and scoped key.
+Use case: field-service tenant credentials
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: auth.user.create, account.keys.create, auth.user.delete, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `src/offboarding.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

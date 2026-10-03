@@ -1,0 +1,23 @@
+{
+  "name": "field-service-tenant-keys",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/field_service_api.ts",
+    "demo": "node --experimental-strip-types src/tenant_handoff_demo.ts",
+    "test": "node --experimental-strip-types --test src/offboarding.test.ts",
+    "typecheck": "tsc"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  },
+  "license": "MIT"
+}
